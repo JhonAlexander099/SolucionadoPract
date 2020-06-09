@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallar numero primo</title>
+</head>
+<body>
+    <input type="text" id="K"></br><br/>
+    <button onclick="divisores()">Mostrar resultados</button>
+    <p id="R"></p>
+</body>
+<script>
+    function divisores(){
+        var B=document.getElementById("K").value;
+        var X=0;
+        var Z= {};
+        for(var i=1; i<=B; i++){
+            if(B%i==0){
+                divisores[X]=i;
+                X++;
+            }
+        }
+        if (X==0){
+            document.getElementById("R").innerHTML="El numero es Primo";
+        }else{
+            document.getElementById("R").innerHTML="El numero no es Primo";
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero entre 20 y 100 o 400</title>
+</head>
+<body>
+    <h1>Ingrese su numero</h1>
+    <input type="text" id="N"></br>
+    <button onclick="R()">CLICK HERE!</button>
+    <p id="K"></p>
+</body>
+<script>
+    function R(){
+        var X = document.getElementById("N").value;
+        if(X<20 || X>400){
+            document.getElementById("K").innerHTML="El numero no se encuentra entre ninguno de los numeros dados";
+        }else if(X>=20 && X<=100){
+            document.getElementById("K").innerHTML="El numero se encuentra entre 20 y 100";
+        }else if(X>100 && X<=400){
+            document.getElementById("K").innerHTML="El numero se encuentra entre 100 y 400";
+        }
+    }
+</script>
+</html>
